@@ -1,0 +1,3 @@
+secara default iterable itu immutable
+sedangkan mutable itu turunan dari immutable,
+jadi operasi pada immutable bisa dilakukan di mutable
