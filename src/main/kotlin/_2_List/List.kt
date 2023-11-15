@@ -29,7 +29,7 @@ fun main() {
 
 }
 
-fun list() {
+private fun list() {
 
     // wajib memasukkan data terlebih dahulu, karena datanya tidak bisa berubah ubah
     val myList: List<String> = listOf("Yoga", "Dimas", "Pambudi")
@@ -84,7 +84,7 @@ fun list() {
     println("apakah tidak kosong = ${myList.isNotEmpty()}")
 }
 
-fun iniMutableList() {
+private fun iniMutableList() {
 
     // tidak wajib memasukkan data terlebih dahulu, karena datanya bisa diubah
     val myMutableList: MutableList<String> = mutableListOf()
