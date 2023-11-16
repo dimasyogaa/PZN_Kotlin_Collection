@@ -1,5 +1,13 @@
 package _6_Collection.app
 
+
+/**
+ * Collection
+ * ● Semua data collection adalah turunan dari interface Collection
+ * ● Collection digunakan sebagai general operation terhadap struktur data collection, seperti
+ * membaca dan menulis data di collection
+ */
+
 fun main() {
 
     // collection() // immutable
