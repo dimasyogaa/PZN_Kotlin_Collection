@@ -1,0 +1,1 @@
+ * listOf<String> diubah menjadi listOf<Int> dinamakan prses transformasi
