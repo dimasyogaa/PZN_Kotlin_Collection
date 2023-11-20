@@ -24,11 +24,13 @@ fun main() {
 
     val list3: List<Pair<String, String>> = list1.zip(list2)
     println(list3) // [(Yoga, Progammer), (Dimas, Zaman), (Pambudi, Now)]
+    println(list3.unzip()) // [(Yoga, Progammer), (Dimas, Zaman), (Pambudi, Now)]
 
     println()
 
     val list31: List<Pair<String, String>> = list1.zip(list21)
     println(list31) // [(Yoga, Progammer), (Dimas, Zaman)]
+    println(list31.unzip()) // [(Yoga, Progammer), (Dimas, Zaman)]
 
     spaceLine()
 
