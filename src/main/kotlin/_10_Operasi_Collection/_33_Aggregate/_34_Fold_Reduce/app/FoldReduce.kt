@@ -27,12 +27,18 @@ package _10_Operasi_Collection._33_Aggregate._34_Fold_Reduce.app
  *
  * reduceRightIndexed() & foldRightIndexed()
  * Sama seperti reduceIndexed() dan foldIndexed() namun dimulai dari element akhir
+ *
+ * Gunakan reduce ketika Anda yakin bahwa koleksi tidak kosong dan Anda tidak perlu menyediakan nilai awal untuk accumulator.
+ * Gunakan fold ketika koleksi mungkin kosong atau ketika Anda ingin menyediakan nilai awal untuk accumulator.
  */
 
 fun main() {
 
     val numbers = (1..100).toList().shuffled()
 
+    /**
+     * ika first lebih kecil dari second, maka nilai second yang akan menjadi elemen yang disimpan sementara. Jika tidak, nilai first akan tetap.
+     */
     val max = numbers.reduce { first, second ->
         if (first < second) second
         else first
@@ -54,11 +60,15 @@ fun main() {
     println("sum : ${numbers.sum()}")
 
     val names = listOf("Yoga", "Dimas", "Pambudi")
-    val count = names.fold(0) { first, second ->
+    val count = names.fold(0) { first, _ ->
         first + 1
+    }
+    val totalLength = names.fold(0) { total, name ->
+        total + name.length
     }
 
     println("count : $count")
     println("count : ${names.count()}")
+    println("total length names : $totalLength")
 
 }
